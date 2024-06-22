@@ -9,7 +9,7 @@ export const homeObjOne = {
     "Canines are a man's best friend, hence I train all dogs from small breed to big breed, young and old",
   buttonLabel: "Get started",
   imgStart: false,
-  img: require("../../images/image-1.jpg"),
+  img: require("../../images/obedience.jpg").default,
   alt: "Car",
   dark: true,
   primary: true,

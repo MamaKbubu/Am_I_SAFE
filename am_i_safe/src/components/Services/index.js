@@ -1,7 +1,7 @@
 import React from "react";
 import Icon1 from "../../images/pet-sitting.png";
 import Icon2 from "../../images/obedience.jpg";
-import Icon3 from "../../images/pic-2.jpg";
+import Icon3 from "../../images/obedience.jpg";
 import {
   ServicesContainer,
   ServicesH1,
