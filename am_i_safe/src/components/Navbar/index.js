@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+// import {animateScroll as scroll} from "react-scroll"
 import {
   Nav,
   NavbarContainer,
@@ -9,6 +9,7 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
+  NavLinks,
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
@@ -26,9 +27,6 @@ const Navbar = ({ toggle }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
-    return () => {
-      window.removeEventListener("scroll", changeNav);
-    };
   }, []);
 
   return (
@@ -42,7 +40,7 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <Link
+                <NavLinks
                   to="about"
                   smooth={true}
                   duration={500}
@@ -50,11 +48,11 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  About Me
-                </Link>
+                  About Us
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <Link
+                <NavLinks
                   to="discover"
                   smooth={true}
                   duration={500}
@@ -63,10 +61,10 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                 >
                   Discover
-                </Link>
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <Link
+                <NavLinks
                   to="services"
                   smooth={true}
                   duration={500}
@@ -75,11 +73,11 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                 >
                   Services
-                </Link>
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <Link
-                  to="signup"
+                <NavLinks
+                  to="/signup"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -87,7 +85,7 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                 >
                   Sign Up
-                </Link>
+                </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>

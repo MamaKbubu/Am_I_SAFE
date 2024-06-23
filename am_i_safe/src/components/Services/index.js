@@ -1,7 +1,7 @@
 import React from "react";
-import Icon1 from "../../images/pet-sitting.png";
-import Icon2 from "../../images/obedience.jpg";
-import Icon3 from "../../images/obedience.jpg";
+import Icon1 from "../../images/emergency-system.jpg";
+import Icon2 from "../../images/communitywatch.gif";
+import Icon3 from "../../images/safety_training_muncipality.jpg";
 import {
   ServicesContainer,
   ServicesH1,
@@ -16,28 +16,33 @@ const Services = () => {
   return (
     <>
       <ServicesContainer id="services">
-        <ServicesH1>My Services</ServicesH1>
+        <ServicesH1>Our Services</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
             <ServicesIcon src={Icon1} />
-            <ServicesH2>Pet Sitting</ServicesH2>
+            <ServicesH2>Emergency Response System</ServicesH2>
             <ServicesP>
-              I have handled a various number of animals this being cats, dogs,
-              wolves...lol
+              Our SOS alert system connects to your phone or smartwatch,
+              instantly notifying SAFE agents and local authorities in case of
+              an emergency, ensuring a swift response.
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon2} />
-            <ServicesH2>Obedience & Protective Training </ServicesH2>
+            <ServicesH2>Community Watch Programs</ServicesH2>
             <ServicesP>
-              This is where I train both the owner and his/her dog extensively.
+              Our community watch programs are designed to keep you safe in your
+              neighborhood. We provide training and resources to help you and
+              your neighbors stay safe.
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon3} />
-            <ServicesH2>Premium Benefits</ServicesH2>
+            <ServicesH2>Safety Education & Training</ServicesH2>
             <ServicesP>
-              I provide the best training for your dog and you as the owner.
+              We offer safety education and training programs to help you stay
+              safe in your community. Our programs are designed to help you
+              recognize and avoid dangerous situations.
             </ServicesP>
           </ServicesCard>
         </ServicesWrapper>
