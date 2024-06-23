@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Video from "../../videos/video.mp4";
 import { Button } from "../ButtonElements";
 import {
@@ -26,21 +27,21 @@ const Hero = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>A Whole Canine Behavorist</HeroH1>
+        <HeroH1>Safety is Important</HeroH1>
         <HeroP>
-          Come and sign up for my services. This website will give you a break
-          down of how I may train your dogs.
+          Come on a journey with us to learn how to stay safe in your community
         </HeroP>
         <HeroBtnWrapper>
-          <Button
-            to="signup"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
-          >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          <Link to="about">
+            <Button
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
+              primary="true"
+              dark="true"
+            >
+              Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            </Button>
+          </Link>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
